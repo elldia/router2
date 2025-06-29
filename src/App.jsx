@@ -11,12 +11,16 @@ function App() {
       {/* test components */}
       {/* <Home />
       <About /> */}
-
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+      
+      <BrowserRouter basename="router2">
+        <div id="wrap">
+          <h1><Link to="/">index</Link></h1>
+          <Link to="/about">About</Link>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
       </BrowserRouter>
 
     </>
