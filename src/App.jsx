@@ -14,7 +14,7 @@ function App() {
       
       <BrowserRouter basename="router2">
         <div id="wrap">
-          <h1><Link to="/">index</Link></h1>
+          <h1><Link to="/">indexx</Link></h1>
           <Link to="/about">About</Link>
           <Routes>
             <Route path="/" element={<Home />} />
